@@ -14,6 +14,20 @@ import mx.itson.music.enums.Genero;
 public class Album {
 
     /**
+     * @return the lanzamiento
+     */
+    public int getLanzamiento() {
+        return lanzamiento;
+    }
+
+    /**
+     * @param lanzamiento the lanzamiento to set
+     */
+    public void setLanzamiento(int lanzamiento) {
+        this.lanzamiento = lanzamiento;
+    }
+
+    /**
      * @return the nombre
      */
     public String getNombre() {
@@ -72,4 +86,5 @@ public class Album {
     private Artista artista;
     private List<Cancion> canciones;
     private Genero genero;
+    private int lanzamiento;
 }
