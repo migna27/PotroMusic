@@ -28,7 +28,7 @@ public class Main {
       a.setCanciones(canciones);
        
        
-       List<Cancion> canciones = new ArrayList<>;
+       List<Cancion> canciones = new ArrayList<>();
        
     }
 }
