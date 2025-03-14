@@ -25,10 +25,10 @@ public class Main {
         a.setNombre("Born Pink");
        a.setLanzamiento(2022);
        a.setGenero(Genero.POP);
-      a.setCanciones(canciones);
+     
        
        
        List<Cancion> canciones = new ArrayList<>();
-       
+        a.setCanciones(canciones);
     }
 }
