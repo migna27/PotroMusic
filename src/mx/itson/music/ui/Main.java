@@ -51,7 +51,7 @@ public class Main {
                 System.out.println("agregar una nueva cancion 1(si) o 2(no)");
                 String opcion = scan.nextLine();
                 switch (opcion) {
-                    case "1":
+                    case "1" -> {
                         System.out.println("Ingrese el nombre de la canción: ");
                         String nombreCancion = scan.nextLine();
                         cancion.setNombre(nombreCancion);
@@ -64,19 +64,19 @@ public class Main {
                         cancion.setDuracion(duracion);
                         canciones.add(cancion); 
                         System.out.println("¡Canción registrada exitosamente!");
-                        break;
-                    case "2":
+               }
+                    case "2" -> {
                         System.out.println("Registro de canciones finalizado.");
                         break OUTER;
-                    default:
-                        System.out.println("elija una opcion valida");
-                        break;
+               }
+                    default -> System.out.println("elija una opcion valida");
                 }
             }
         for(Cancion c : album.getCanciones()){
            System.out.println(c.getOrden());
            System.out.println(c.getNombre());
            System.out.println(c.getDuracion());
+           System.out.println("-------------------------------------------");
         }
     }catch(Exception e) {
     System.err.println("ocurrio un error en la ejecucion");
